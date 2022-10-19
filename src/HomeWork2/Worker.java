@@ -1,23 +1,28 @@
 package HomeWork2;
 
 public class Worker {
-    public String name;
-    public String gender;
-    public byte age;
-    public double sallary;
-    public int medical_police;
+    private String name;
+    private String gender;
+    private byte age;
+    private double sallary;
+    private int medicalPolice;
 
+    public Worker(String name, String gender, byte age, double sallary, int medicalPolice) {
+        System.out.println("Created worker specialist: ");
+        setValue(name, gender, age, sallary, medicalPolice);
+        System.out.println(getValue());
+    }
 
-    public void setValue(String name, String gender, byte age, double sallary, int medical_police) {
+    public void setValue(String name, String gender, byte age, double sallary, int medicalPolice) {
         this.name = name;
         this.gender = gender;
         this.age = age;
         this.sallary = sallary;
-        this.medical_police = medical_police;
+        this.medicalPolice = medicalPolice;
     }
 
     public String getValue() {
-        String result1 = "Worker name: " + name + ". Gender: " + gender + ". Age: " + age + ". Sallary: " + sallary + ". Medical_police: " + medical_police;
+        String result1 = "Worker name: " +this.name + ". Gender: " + this.gender + ". Age: " + this.age + ". Sallary: " + this.sallary + ". MedicalPolice: " + this.medicalPolice;
         return result1;
     }
 }
