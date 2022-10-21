@@ -7,7 +7,7 @@ public class Worker {
     private double sallary;
     private int medicalPolice;
 
-    public Worker(String name, String gender, byte age, double sallary, int medicalPolice) {
+     public Worker(String name, String gender, byte age, double sallary, int medicalPolice) {
         System.out.println("Created worker specialist: ");
         setValue(name, gender, age, sallary, medicalPolice);
         System.out.println(getValue());
